@@ -1,0 +1,16 @@
+x=-5:0.05:5;
+y=normpdf(x,0,1);
+subplot(131);
+plot(x,y);
+axis([-5 5 0 1]);
+title('mean=0, std dev=1');
+y=normpdf(x,0,0.5);
+subplot(132);
+plot(x,y);
+axis([-5 5 0 1]);
+title('mean=0, std dev=0.5');
+y=normpdf(x,1,1);
+subplot(133);
+plot(x,y);
+axis([-5 5 0 1]);
+title('mean=0, std dev=1');

@@ -1,0 +1,14 @@
+x=0:30;
+y=poisspdf(x,5);
+subplot(131);plot(x,y);
+axis([0 30 0 0.2]);
+title('alpha=5');
+y=poisspdf(x,10);
+subplot(132); plot(x,y);
+axis([0 30 0 0.2]);
+title('alpha=10');
+y=poisspdf(x,15);
+subplot(133);
+plot(x,y);
+axis([0 30 0 0.2]);
+title('alpha=15');

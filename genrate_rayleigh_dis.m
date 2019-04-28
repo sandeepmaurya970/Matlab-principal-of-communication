@@ -1,0 +1,16 @@
+x=0:0.005:4;
+y=raylpdf(x,0.4);
+subplot(131);
+plot(x,y);
+axis([0 4 0 2]);
+title('alpha=0.4');
+y=raylpdf(x,0.7);
+subplot(132);
+plot(x,y);
+axis([0 4 0 2]);
+title('alpha=0.7');
+y=raylpdf(x,1.2);
+subplot(133);
+plot(x,y);
+axis([0 4 0 2]);
+title('alpha=1.2');
